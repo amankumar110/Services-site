@@ -19,6 +19,9 @@ h3{
 p{
  font-size: 1.25rem;
 }
+nav{
+    padding: 12px;
+}
 .navbar-brand{
     margin-bottom: 0;
 }
@@ -157,6 +160,10 @@ form div input{
     }
     form  button{
         width: 100%;
+    }
+    .alertdiv{
+        width: 75%;
+        left: 12.5%;
     }
     
 }
