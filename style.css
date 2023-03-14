@@ -19,6 +19,9 @@ h3{
 p{
  font-size: 1.25rem;
 }
+.navbar-brand{
+    margin-bottom: 0;
+}
 .hero {
     width: 100%;
     background-image: url(1.jpg);
