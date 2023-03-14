@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    
+    font-family: serif;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size:2em;
+}
+h3{
+    font-size:1.5rem;;
+}
+p{
+ font-size: 1.25rem;
+}
+.hero {
+    width: 100%;
+    background-image: url(1.jpg);
+    height: 90vh;
+    background-size: 100%;
+    background-position:  60% 40%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+.hero h2{
+    color: whitesmoke;
+    z-index: 3;
+    font-weight: 800;
+    margin: 0 0 30px 30px;
+    font-size: 50px;
+    font-style: italic;
+}
+.hero .gradient{
+    min-width: 100%;
+    min-height: 100%;
+    background: linear-gradient(45deg, rgb(0,0,0),rgb(0,0,0,0.4) 50%);
+    position: absolute;
+    top: 0;
+}
+   
+.services-section{
+    max-width: 80vw;
+    
+    margin-inline: auto;
+    margin-top: 10vh;
+}
+.features{
+    width: 100%;
+}
+.features:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.features img{
+    width: 45%;
+}
+.form-section{
+    max-width: 80vw;
+    margin-inline: auto;
+    margin-top: 10vh;
+}
+
+form {
+   gap: 10px;
+}
+
+form div{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+form div label{
+    font-size: 30px;
+
+}
+form div input{
+    width: 80%;
+     padding: 10px;
+     transition: 0.4s ease-in-out;
+}
+
+
+.alertdiv{
+    position: fixed;
+    width: 50%;
+    left: 25%;
+    top: 5vh;
+    z-index: 3;
+    display: none;
+    align-items: center;
+    transition: 0.4s ease ease-in;
+}
+.alertwarning{
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    margin: 0;
+}
+
+
+/* utils */
+.width50{
+    width: 50%;
+}
+.mxwidth80{
+    max-width: 80%;
+    margin-inline: auto;
+}
+
+
+@media  screen and (width <= 1360px) {
+      .hero{
+
+        height: 50vh;
+      }   
+}
+@media  screen and (width <= 778px) {
+    .hero{
+        height: 30vh;
+    }
+    .features img{
+        width: 70%;
+    }
+    .features{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10vh;
+        gap: 12px;
+
+    }
+    .features:nth-child(2){
+        flex-direction: column;
+    }
+    form div{
+        flex-direction: column;
+        text-align: center;
+    }
+    form div input{
+        width: 100%!important;
+    }
+    form div textarea{
+        width: 100%!important;
+    }
+    form  button{
+        width: 100%;
+    }
+    
+}

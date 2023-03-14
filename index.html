@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <nav role="navigation" class="bg-dark text-white-50 d-flex flex-row align-items-center justify-content-between">
+            <h2 class="navbar-brand py-2 ps-3 fs-2 h2">MyServices</h2>
+            <div class="dropdown">
+                <a class="btn btn-outline-secondary  btn-md dropdown-toggle mx-5" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#features-freelancing">FreeLancing</a></li>
+                    <li><a class="dropdown-item" href="#features-product-promotion">Product promoting</a></li>
+                    <li><a class="dropdown-item" href="#features-job-hunting">Employee Hunting</a></li>
+                </ul>
+            </div>
+
+            </div>
+        </nav>
+    </section>
+    <section class="hero">
+        <div class="gradient"></div>
+        <h2>Design your future</h2>
+    </section>
+
+
+
+    <section class="services-section">
+        <div id="features-freelancing" class="features-freelancing features d-flex">
+            <img src="https://justenterprise.org/wp-content/uploads/2019/08/drawings_growing-1.png" alt="">
+            <div class="d-flex g-3 flex-column align-items-center justify-content-center width50">
+                <h2 class="mxwidth60 text-danger">Freelancing</h2>
+                <p class=" text-body-secondary">"Unleash your potential with freelancing - work on your terms,
+                    achieve your dreams."
+                </p>
+            </div>
+        </div>
+
+        <div id="features-product-promotion" class=" features d-flex">
+            <img src="https://kit8.net/wp-content/uploads/edd/2022/01/Social_network_marketing_preview.jpg" alt="">
+            <div class="d-flex g-3 flex-column align-items-center justify-content-center width50">
+                <h2 class="mxwidth60 text-success">Product Promotion</h2>
+                <p class=" text-body-secondary">"Maximize Your Reach and Boost Your Sales - Let Our Marketing
+                    Experts Take Your Brand to the Next Level!"</p>
+            </div>
+        </div>
+
+        <div id="features-job-hunting" class=" features d-flex">
+            <img src="https://img.freepik.com/free-vector/modern-job-search-staff-hiring-online-recruitment-freelance-profession-applicant-studying-help-wanted-poster-freelancer-looking-orders_335657-2695.jpg"
+                alt="">
+            <div class="d-flex g-3 flex-column align-items-center justify-content-center width50">
+                <h2 class="mxwidth60 text-warning">Job hunting</h2>
+                <p class=" text-body-secondary">"Find your dream job with ease - let us guide you to success."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <form class=" information-form text-body-secondary d-flex flex-column py-4 align-items-center" action="">
+            <h2>Enter information</h2>
+            <div>
+                <label for="fs-3">Name</label>
+                <input name="clientname" type="text" class="width50">
+            </div>
+            <div>
+                <label for="fs-3">Email Address</label>
+                <input type="email" name="clientemail" class="width50">
+            </div>
+            <div>
+                <label for="fs-3">Description</label>
+                <textarea name="clientdescription" class="width50 p-3"  id="" cols="30" rows="10"></textarea>
+            </div>
+            <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+        </form>
+    </section>
+
+     <div class="alertdiv alert alert-warning align-items-center justify-content-between">
+        <p class="alertwarning"></p>
+        <button class="btn alert-toggle btn-warning">ok</button>
+     </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous">
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
