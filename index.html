@@ -7,7 +7,11 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
 </head>
 
 <body>
@@ -15,10 +19,10 @@
         <nav role="navigation" class="bg-dark text-white-50 d-flex flex-row align-items-center justify-content-between">
             <h2 class="navbar-brand  fs-2 h2">MyServices</h2>
             <div class="dropdown">
-                <a class="btn btn-outline-secondary  btn-md dropdown-toggle mx-5" href="#" role="button"
+                <button class="btn btn-outline-secondary  btn-md dropdown-toggle mx-5" href="#" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     Services
-                </a>
+                </button>
 
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#features-freelancing">FreeLancing</a></li>
@@ -32,9 +36,14 @@
     </section>
     <section class="hero">
         <div class="gradient"></div>
-        <h2>Design your future</h2>
+        <h2 class="fs-1 herotext">Design your future</h2>
+        <div class="dots-container">
+            <div class="dots"><i class="fa-solid fa-image"></i></div>
+            <div class="dots"><i class="fa-solid fa-image"></i></div>
+            <div class="dots"><i class="fa-solid fa-image"></i></div>
+            <div class="dots"><i class="fa-solid fa-image"></i></div>
+        </div>
     </section>
-
 
 
     <section class="services-section">
@@ -81,23 +90,22 @@
             </div>
             <div>
                 <label for="fs-3">Description</label>
-                <textarea name="clientdescription" class="width50 p-3"  id="" cols="30" rows="10"></textarea>
+                <textarea name="clientdescription" class="width50 p-3" id="" cols="30" rows="10"></textarea>
             </div>
             <button class="btn btn-primary btn-lg" type="submit">Submit</button>
         </form>
     </section>
 
-     <div class="alertdiv alert alert-warning align-items-center justify-content-between">
+    <div class="alertdiv alert alert-warning align-items-center justify-content-between">
         <p class="alertwarning"></p>
         <button class="btn alert-toggle btn-warning">ok</button>
-     </div>
+    </div>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
 
     <script src="./script.js"></script>
 </body>
